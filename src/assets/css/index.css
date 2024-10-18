@@ -5,3 +5,13 @@
 .row {
   margin: 0;
 }
+
+
+/* PROPERTIES */
+#properties .card:hover {
+  transform: scale(1.04); /* Slightly increase size on hover */
+}
+
+#properties .card {
+  height: 100%;
+}

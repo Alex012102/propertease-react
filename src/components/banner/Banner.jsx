@@ -6,8 +6,8 @@ import MetricsCard from "../card/MetricsCard";
 
 const Banner = () => {
   return (
-    <div className="row">
-      <div className="col col-4">
+    <div className="row row-cols-1 row-cols-md-2">
+      <div className="col col-md-4 mt-3 mt-md-0">
         <div className="row row-cols-2">
           <div className="col col-auto">
             <svg
@@ -26,12 +26,12 @@ const Banner = () => {
           </div>
           <div className="col col-8">
             <h3 className="mb-0">Account Dashboard</h3>
-            <p className="m-0">Weclcome, John</p>
+            <p className="m-0">Welcome, John</p>
           </div>
         </div>
       </div>
-      <div className="col">
-        <div className="row gap-3 justify-content-end">
+      <div className="col col-md-8">
+        <div className="row gap-3 justify-content-end mt-3 mt-md-0">
           {metricObjects.map((item, index) => (
             <MetricsCard key={index} title={item.title} value={item.value} />
           ))}
