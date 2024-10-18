@@ -1,0 +1,33 @@
+li svg {
+  width: 18px;
+  aspect-ratio: 1;
+  margin: 0 .3rem;
+}
+
+#navigation li {
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+}
+
+#navigation a {
+  color: var(--bs-secondary); /* Initial link color */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+#navigation svg {
+  width: 18px;
+  height: 18px;
+  margin: 0 0.5rem;
+  fill: var(--bs-secondary); /* Initial fill color */
+  transition: fill 0.3s ease, transform 0.3s ease; /* Smooth transition for fill color and scale */
+}
+
+#navigation li:hover a {
+  color: var(--bs-primary); /* Change text color on hover */
+  font-weight: bold; /* Make text bold on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+#navigation li:hover svg {
+  fill: var(--bs-primary); /* Change SVG fill color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}

@@ -1,0 +1,9 @@
+#userPFP {
+  width: 5rem;
+  aspect-ratio: 1;
+}
+
+.metrics {
+  color: #ffffff;
+  background-color: #408aaa;
+}

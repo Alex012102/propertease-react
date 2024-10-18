@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./assets/css/custom.min.css";
+import "./assets/css/index.css";
 
-function App() {
+import Header from "./components/header/Header.jsx";
+import Banner from "./components/banner/Banner.jsx";
+import Overview from "./pages/OverviewPage.js";
+import Banking from "./pages/BankingPage.js";
+import Receipts from "./pages/ReceiptsPage.js";
+import Properties from "./pages/PropertiesPage.js";
+import Maintenance from "./pages/MaintPage.js";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container-fluid">
+        <Header />
+        <Banner />
+        {/* Page Content */}
+        <Routes>
+          <Route path="/overview" element={<Overview />} />
+          <Route path="/banking" element={<Banking />} />
+          <Route path="/receipts" element={<Receipts />} />
+          <Route path="/properties" element={<Properties />} />
+          <Route path="/maintenance" element={<Maintenance />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
