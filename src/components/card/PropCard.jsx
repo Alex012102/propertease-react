@@ -2,7 +2,7 @@ import React from "react";
 
 const PropCard = ({ property }) => {
   return (
-    <div className="card p-0 shadow border-0">
+    <div className="card card-hover p-0 shadow border-0">
       <img
         src={property.photo}
         className="card-img-top"

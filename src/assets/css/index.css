@@ -2,16 +2,19 @@
   margin: 0 1rem;
 }
 
+body {
+  background-color: #e6e6e6;
+}
+
 .row {
   margin: 0;
 }
 
-
-/* PROPERTIES */
-#properties .card:hover {
+.card-hover:hover {
   transform: scale(1.04); /* Slightly increase size on hover */
 }
 
+/* PROPERTIES */
 #properties .card {
   height: 100%;
 }
