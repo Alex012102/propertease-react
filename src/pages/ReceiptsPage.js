@@ -1,7 +1,8 @@
 import React from "react";
+import ReceiptTable from "../components/receipts-table/ReceiptTable";
 
 const Receipts = () => {
-  return <div>Welcome to the Receipts Page!</div>;
+  return <ReceiptTable />;
 };
 
 export default Receipts;
