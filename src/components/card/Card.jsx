@@ -6,7 +6,7 @@ const Card = ({ title, content, size, titleAlign }) => {
       <div className="card shadow border-0">
         <div className="card-body p-2">
           <h5 className={`card-title text-${titleAlign}`}>{title}</h5>
-          <div className="overflow-y-auto w-100">{content}</div>
+          {content}
         </div>
       </div>
     </div>

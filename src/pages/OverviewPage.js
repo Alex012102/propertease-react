@@ -8,6 +8,7 @@ import Event from "../components/Event";
 import UpComing from "../dash-content/UpComing";
 import Vendors from "../dash-content/Vendors";
 import ContactUs from "../dash-content/ContactUs";
+import Expenses from "../dash-content/Expenses";
 
 const Overview = () => {
   return (
@@ -23,7 +24,7 @@ const Overview = () => {
         <div className="row row-cols-1 row-cols-lg-3 g-3">
           {" "}
           {/* Use 'g-3' for consistent gap */}
-          <Card title="Expenses" size="lg-6" />
+          <Card title="Expenses" content={<Expenses />} size="lg-6" />
           <Card title="Notifications" size="lg-4" />
           <Card title="Metrics" size="lg-2" titleAlign="center" />
           <Card title="Vendors" content={<Vendors />} size="lg-4" />
