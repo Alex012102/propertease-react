@@ -14,7 +14,21 @@ body {
   transform: scale(1.04); /* Slightly increase size on hover */
 }
 
+.fs-7 {
+  font-size: .9rem;
+}
+
 /* PROPERTIES */
 #properties .card {
   height: 100%;
+}
+
+/* Contact */
+.circle-placeholder {
+  height: 80%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }

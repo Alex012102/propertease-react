@@ -1,4 +1,4 @@
-const tenantsData = [
+const sampleTenantData = [
   {
     tenantName: "John Doe",
     tenantAddress: "123 Elm St, Springfield, IL, 62701",
@@ -61,4 +61,4 @@ const tenantsData = [
   },
 ];
 
-export default tenantsData;
+export default sampleTenantData;

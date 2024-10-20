@@ -1,6 +1,6 @@
 import React from "react";
 import PropCard from "../components/card/PropCard";
-import samplePropInfo from "../components/card/samplePropInfo";
+import samplePropInfo from "../samples/samplePropInfo.js"
 
 const Properties = () => {
   return (

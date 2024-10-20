@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./assets/css/custom.min.css";
 import "./assets/css/index.css";
+import "./assets/css/scrollbar.css";
 
 import Header from "./components/header/Header.jsx";
 import Banner from "./components/banner/Banner.jsx";

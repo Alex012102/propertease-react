@@ -1,5 +1,5 @@
 import React from "react";
-import sampleWorkOrders from "../components/card/sampleWorkOrders";
+import sampleWorkOrders from "../samples/sampleWorkOrders";
 
 import MaintCard from "../components/card/MaintCard";
 

@@ -1,15 +1,15 @@
 import React from "react";
 
-import tenantsData from "./tenantsData";
+import sampleTenantData from "../samples/sampleTenantData";
 import Contact from "../components/Contact";
 
 const Messages = () => {
   return (
     <div
       class="list-group list-group-flush overflow-y-auto"
-      style={{ maxHeight: "16rem" }}
+      style={{ maxHeight: "18.9rem" }}
     >
-      {tenantsData.map((contact, index) => (
+      {sampleTenantData.map((contact, index) => (
         <Contact index={index} contact={contact} />
       ))}
     </div>
