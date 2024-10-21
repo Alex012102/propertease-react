@@ -2,6 +2,8 @@ import React from "react";
 import "../../assets/css/header.css";
 
 import Navbar from "../nav/Navbar";
+import InputInfoModal from "../modal/InputInfoModal";
+import PropertyInput from "../modal/PropertyInput";
 
 const Header = () => {
   return (
@@ -34,7 +36,11 @@ const Header = () => {
         <Navbar />
 
         <div className="col-md-3 text-end">
-          <button type="button" className="btn btn-outline-info" id="settingBTN">
+          <button
+            type="button"
+            className="btn btn-outline-info"
+            id="settingBTN"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
